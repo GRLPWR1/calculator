@@ -19,6 +19,11 @@ function multiplication() {
 function division() {
     let n = prompt('Какое число делим?');
     let q = prompt('На какое число делим?');
-    let result = n/q;
-    alert(result);
+    if(q==0) {
+        alert('На ноль делить нелья!');
+    }
+    else {
+        let result = n/q;
+        alert(result);
+    }
 }
