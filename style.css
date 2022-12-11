@@ -1,0 +1,67 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 10%;
+    grid-template-areas:
+        ". addition result1 ."
+        ". deduction result2 ."
+        ". division result3 ."
+        ". multiplication result4 ."
+        "footer footer footer footer";
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: Poppins, Roboto, sans-serif;
+    font-size: xx-large;
+    background-color: #FE95ED;
+}
+form, div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form p {
+    margin: 0 0.5em 0 0.5em;
+}
+button {
+    border: none;
+    border-radius: 0.33em;
+    margin: 0 1em 0 1em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #FEA2EF;
+    color: #FFFFFF;
+    font-size: xx-large;
+
+}
+.addition {
+    grid-area: addition;
+}
+#additionResult {
+    grid-area: result1;
+}
+.deduction {
+    grid-area: deduction;
+}
+#deductionResult {
+    grid-area: result2;
+}
+.division {
+    grid-area: division;
+}
+#divisionResult {
+    grid-area: result3;
+}
+.multiplication {
+    grid-area: multiplication;
+}
+#multiplicationResult {
+    grid-area: result4;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+.footer p {
+    align-self: center;
+    font-size: small;
+}

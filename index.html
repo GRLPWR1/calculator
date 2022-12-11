@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Калькулятор</title>
 </head>
 <body>
-    <button onclick="addition()">+</button>
-    <button onclick="deduction()">–</button>
-    <button onclick="division()">/</button>
-    <button onclick="multiplication()">*</button>
+    <form action="" class="addition">
+        <input type="text" placeholder="Слагаемое" id="summand1">
+        <p>+</p>
+        <input type="text" placeholder="Слагаемое" id="summand2">
+        <button onclick="addition()">=</button>
+    </form>
+    <div id="additionResult"></div>
+    <form action="" class="deduction">
+        <input type="text" placeholder="Уменьшаемое" id="minuend">
+        <p>–</p>
+        <input type="text" placeholder="Вычитаемое" id="subtrahend">
+        <button onclick="deduction()">=</button>
+    </form>
+    <div id="deductionResult"></div>
+    <form action="" class="division">
+        <input type="text" placeholder="Делимое" id="dividend">
+        <p>/</p>
+        <input type="text" placeholder="Делитель" id="divisor">
+        <button onclick="division()">=</button>
+    </form>
+    <div id="divisionResult"></div>
+    <form action="" class="multiplication">
+        <input type="text" placeholder="Множитель" id="multiplier1">
+        <p>*</p>
+        <input type="text" placeholder="Множитель" id="multiplier2">
+        <button onclick="multiplication()">=</button>
+    </form>
+    <div id="multiplicationResult"></div>
+    <footer class="footer">
+        <p>&#169 Александра Суровцева, 2022</p>
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>
